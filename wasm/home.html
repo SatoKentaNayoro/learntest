@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="wasm_exec.js"></script>
+<script>
+    const go = new Go();
+    WebAssembly.instantiateStreaming(fetch("wasmtest.wasm"), go.importObject)
+        .then((result) => {
+                go.run(result.instance);
+                // console.log("result", result)
+            }
+        );
+
+    function click_fun(){
+        let result = testWasm(num1.value,num2.value,num3.value)
+        ans.innerHTML=result
+        let  a = JSON.parse(result)
+        console.log(a)
+    }
+</script>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<input type="text" id="num3">
+<button id="btn" onclick="click_fun()">点击</button>
+<button id="btn2" onclick="testDone()">取消</button>
+<p id="ans">1</p>
+<script>
+
+</script>
+</body>
+</html>
