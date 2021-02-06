@@ -1,0 +1,1 @@
+  cat 18101.log | grep  -A 80 'start working: {153775 1336}'| grep 'created label runner' -A 2|awk '{print $1}' | awk -F '.' '{print $1}' >> 4417p1costtime
