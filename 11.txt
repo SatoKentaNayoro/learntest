@@ -1,24 +1,38 @@
-192.168.99.250:/mnt/dataa  /mnt/datatest/dataa_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/datab  /mnt/datatest/datab_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/datac  /mnt/datatest/datac_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/datad  /mnt/datatest/datad_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/datae  /mnt/datatest/datae_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/dataf  /mnt/datatest/dataf_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/datag  /mnt/datatest/datag_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/datah  /mnt/datatest/datah_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/datai  /mnt/datatest/datai_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/dataj  /mnt/datatest/dataj_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/datak  /mnt/datatest/datak_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.250:/mnt/datal  /mnt/datatest/datal_nfs99250  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/dataa  /mnt/datatest/dataa_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/datab  /mnt/datatest/datab_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/datac  /mnt/datatest/datac_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/datad  /mnt/datatest/datad_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/datae  /mnt/datatest/datae_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/dataf  /mnt/datatest/dataf_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/datag  /mnt/datatest/datag_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/datah  /mnt/datatest/datah_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/datai  /mnt/datatest/datai_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/dataj  /mnt/datatest/dataj_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/datak  /mnt/datatest/datak_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
-192.168.99.210:/mnt/datal  /mnt/datatest/datal_nfs99210  nfs noatime,nodiratime,soft,rw,vers=4 0 0
+nohup chia plots create -t /mnt/tp1/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/dataa/ >> create1.log &
+nohup chia plots create -t /mnt/tp1/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datab/ >> create2.log &
+nohup chia plots create -t /mnt/tp2/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datac/ >> create3.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datad/ >> create4.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datae/ >> create5.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/dataf/ >> create6.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datag/ >> create7.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datah/ >> create8.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/dataa/ >> create9.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datab/ >> create10.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datac/ >> create11.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datad/ >> create12.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datae/ >> create13.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/dataf/ >> create14.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datag/ >> create15.log &
+nohup chia plots create -t /mnt/tp3/ -p 8c298823361cd86ae19a02389dc991744a351908e39045594894d3a027da2c5a55d1bcfe26fdb8d2da9cc70533a5a981 -f 94812e8f283287e7226bc396d292d2a68af31eb64c0cc3cf679de562e351f666c14b9f3c478722bacf3f80acad08811a -n 20 -u 32 -b 13600 -k 33 -r 3 -d /mnt/datah/ >> create16.log &
+
+
+
+
+mv plot-k32-2021-06-03-15-16-60e38ceb5cb6b79b11222557236c81236f73dd021b71f5f297c5683342e569bc.plot.2.tmp plot-k32-2021-06-03-15-16-60e38ceb5cb6b79b11222557236c81236f73dd021b71f5f297c5683342e569bc.plot
+mv plot-k32-2021-06-03-15-16-6a3dc975c76a146ce1a2184cd85ebbadb691a0a354f832efe3ee0db0b68eef32.plot.2.tmp plot-k32-2021-06-03-15-16-6a3dc975c76a146ce1a2184cd85ebbadb691a0a354f832efe3ee0db0b68eef32.plot
+mv plot-k32-2021-06-03-15-16-77db97c32c85550a60b7cc8b4aaff0ed7d3bbd1ab75b597c9212cbdba6bc4272.plot.2.tmp plot-k32-2021-06-03-15-16-77db97c32c85550a60b7cc8b4aaff0ed7d3bbd1ab75b597c9212cbdba6bc4272.plot
+mv plot-k32-2021-06-03-15-16-876890be7b77a9a4e18eb5a8638377496d8bcef6fa511c433a9643a5af8d4f7e.plot.2.tmp plot-k32-2021-06-03-15-16-876890be7b77a9a4e18eb5a8638377496d8bcef6fa511c433a9643a5af8d4f7e.plot
+mv plot-k32-2021-06-03-15-16-92a37a88e5d4902aeec13567f1f45c5f262f0e85ff089aede25210f602668ee6.plot.2.tmp plot-k32-2021-06-03-15-16-92a37a88e5d4902aeec13567f1f45c5f262f0e85ff089aede25210f602668ee6.plot
+mv plot-k32-2021-06-03-15-16-9372618a6dbca654269daa12fb9789881b19f9639480dcb1b963c56b9f923259.plot.2.tmp plot-k32-2021-06-03-15-16-9372618a6dbca654269daa12fb9789881b19f9639480dcb1b963c56b9f923259.plot
+mv plot-k32-2021-06-03-15-16-95f94a30ed1ecff9e2d1855db44dfa487f308d212a219901e86e34ed817c630d.plot.2.tmp plot-k32-2021-06-03-15-16-95f94a30ed1ecff9e2d1855db44dfa487f308d212a219901e86e34ed817c630d.plot
+mv plot-k32-2021-06-03-15-16-98972e0b0bc17891db45f4225a4b2c748874e165f0865685f5a1c9bdff1f57d6.plot.2.tmp plot-k32-2021-06-03-15-16-98972e0b0bc17891db45f4225a4b2c748874e165f0865685f5a1c9bdff1f57d6.plot
+mv plot-k32-2021-06-03-15-16-a1804b6b5faf45e6f763f3681ac1c0e0f0a3725a57c5dd2612e6c05860c912aa.plot.2.tmp plot-k32-2021-06-03-15-16-a1804b6b5faf45e6f763f3681ac1c0e0f0a3725a57c5dd2612e6c05860c912aa.plot
+mv plot-k32-2021-06-03-15-16-a2d0809297771b9804568a4d7d52bf72e8c15629bfc534e541a1a955b46d5339.plot.2.tmp plot-k32-2021-06-03-15-16-a2d0809297771b9804568a4d7d52bf72e8c15629bfc534e541a1a955b46d5339.plot
+mv plot-k32-2021-06-03-15-16-a3695c371ef4268d602e4286d2e277c4ce30e5f140610f092879454f4f5e8d3d.plot.2.tmp plot-k32-2021-06-03-15-16-a3695c371ef4268d602e4286d2e277c4ce30e5f140610f092879454f4f5e8d3d.plot
+mv plot-k32-2021-06-03-15-16-afb67e9d706501a874fb9aa80d5264323c5c5434a4bf0fa5ac0eb0be0eb2164d.plot.2.tmp plot-k32-2021-06-03-15-16-afb67e9d706501a874fb9aa80d5264323c5c5434a4bf0fa5ac0eb0be0eb2164d.plot
+mv plot-k32-2021-06-03-15-16-b816944a498cef3f3409d36bf46087394d2a7a40034cc2f39c5f36488b8a7351.plot.2.tmp plot-k32-2021-06-03-15-16-b816944a498cef3f3409d36bf46087394d2a7a40034cc2f39c5f36488b8a7351.plot
+mv plot-k32-2021-06-03-15-16-d3b166fb7874f5a4ab513c4242aae475120b56c0a743098eaf037374f88c1f9e.plot.2.tmp plot-k32-2021-06-03-15-16-d3b166fb7874f5a4ab513c4242aae475120b56c0a743098eaf037374f88c1f9e.plot
+mv plot-k32-2021-06-03-15-16-d3f425558b91eccd95c46a9eef417ebf1bdd25991cd536ff109080c661a9a4bf.plot.2.tmp plot-k32-2021-06-03-15-16-d3f425558b91eccd95c46a9eef417ebf1bdd25991cd536ff109080c661a9a4bf.plot
+mv plot-k32-2021-06-03-15-16-d74efa9875ec35466884c194c8e102848d23337d1c892c916527f3cbc5cf4609.plot.2.tmp plot-k32-2021-06-03-15-16-d74efa9875ec35466884c194c8e102848d23337d1c892c916527f3cbc5cf4609.plot
+mv plot-k32-2021-06-03-15-16-e747741b64edd6ddcc798fad8f704e459f685076ce592ea530e1633c3b631395.plot.2.tmp plot-k32-2021-06-03-15-16-e747741b64edd6ddcc798fad8f704e459f685076ce592ea530e1633c3b631395.plot
+mv plot-k32-2021-06-03-15-16-e84900c869dd9a72e74ef2eead54eea581c797fdf6602fa1f70f158f4651fda0.plot.2.tmp plot-k32-2021-06-03-15-16-e84900c869dd9a72e74ef2eead54eea581c797fdf6602fa1f70f158f4651fda0.plot

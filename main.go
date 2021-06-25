@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"sync"
 )
 
 type TestRpc struct{}
@@ -14,64 +15,57 @@ func (t *TestRpc) Add(i int) int {
 	return i
 }
 
-func main() {
-	//var fileList = make([]string,0)
-	//files, err := GetAllFile("/Users/huangxuchen/gotest_pro/learntest",fileList)
-	//if err != nil {
-	//	fmt.Println(err)
-	//	return
-	//}
-	//fmt.Println(files)
-	//stat, _ := os.Stat("/22")
-	//fmt.Println(stat)
-	//buf := make([]byte,1)
-	//open, _ := os.Open("11.txt")
-	//seek, _ := open.Seek(4, 0)
-	//open.Read(buf)
-	//fmt.Println(seek)
-
-	//var t = new(crc32.Table)
-	//file,_ := os.Open("22.txt")
-	//reader := bufio.NewReader(file)
-	//all, _ := ioutil.ReadAll(reader)
-	////checksum := crc32.Checksum(all, t)
-	////fmt.Println(checksum)
-	////int32Buf := new(bytes.Buffer)
-	////binary.Write(int32Buf, binary.LittleEndian, checksum)
-	////fmt.Println(int32Buf.Bytes())
-	//
-	//ieee := crc32.NewIEEE()
-	//io.WriteString(ieee,string(all))
-	//s := ieee.Sum32()
-	//fmt.Println(s)
-	//size, err := GetAllFileSize("/Users/huangxuchen/学习资料" )
-	//size, err := GetSrcSize("/Users/huangxuchen/学习资料")
-	//if err != nil {
-	//	fmt.Println(err)
-	//	return
-	//}
-	//fmt.Println(size)
-	//a := "/22/dd/rr/aasdd/a/"
-	//split := strings.Split(a, "/")
-	//b := strings.Join(append(split[:len(split)-2], "cache"),"/")
-	//fmt.Println(strings.TrimRight(a,"/"))
-	//fmt.Println(b)
-	//tMap := make(map[string]struct{})
-	//tMap["2"] = struct{}{}
-	//_, ok := tMap["2"]
-	//fmt.Println(tMap)
-	//fmt.Println(ok)
-	//filepath.Walk("/Users/huangxuchen/gotest_pro/learntest/websocketClient", func(path string, info os.FileInfo, err error) error {
-	//	if !info.Mode().IsRegular() {
-	//		return nil
-	//	}else {
-	//		fmt.Println(path)
-	//		fmt.Println(info.Name())
-	//	}
-	//	return nil
-	//})
-
+type aaa struct {
+	c map[string]bbb
 }
+
+type bbb struct {
+	ba []int
+}
+
+type YoungInfo struct {
+	Name string
+	Age  int
+}
+
+type SyncState struct {
+	young     sync.Map
+	youngSize int
+	mu        sync.Mutex
+}
+
+func main() {
+	//syncMap := sync.Map{}
+	//for i := 0; i < 10; i++ {
+	//	y := &YoungInfo{
+	//		Name: string(i)+"a",
+	//		Age: i,
+	//	}
+	//	store, loaded := syncMap.LoadOrStore(i, y)
+	//}
+	//syncMap.Range(func(key, value interface{}) bool {
+	//	info := value.(*YoungInfo)
+	//	go myPrint(info)
+	//	time.Sleep(time.Second)
+	//	return true
+	//})
+	//
+	//time.Sleep(time.Second * 20)
+	//myContext := context.WithValue(context.Background(),"a","b")
+	//fmt.Println(myContext.Value("a"))
+	getwd, err := os.Getwd()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Println(getwd)
+}
+
+func Print(y *YoungInfo) {
+	fmt.Println(*y)
+}
+
+var chan1 = make(chan struct{})
 
 type ttt struct {
 	a string
